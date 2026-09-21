@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koushik Biswas | CSE Undergraduate</title>
+<meta name="description" content="Koushik Biswas — CSE Undergraduate at Daffodil International University, Competitive Programmer and Aspiring Software Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#080808;color:#f5f5f5;font-family:Inter,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:1000;background:rgba(8,8,8,.88);backdrop-filter:blur(14px);border-bottom:1px solid #1d1d1d}
+.nav-container{height:72px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:800}.logo span{color:#888}
+.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{color:#aaa;font-size:14px}.nav-links a:hover{color:white}
+.hero{min-height:88vh;display:flex;align-items:center;border-bottom:1px solid #1d1d1d}
+.hero-grid{width:100%;display:grid;grid-template-columns:1fr 280px;gap:70px;align-items:center}
+.hero-content{max-width:800px}.eyebrow{font-family:"JetBrains Mono",monospace;color:#888;font-size:14px;margin-bottom:20px}
+.hero h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-5px;margin-bottom:25px}
+.hero h1 span{color:#777}.hero-subtitle{font-size:clamp(18px,2vw,25px);color:#c7c7c7;max-width:780px;margin-bottom:20px}
+.location{color:#777;font-family:"JetBrains Mono",monospace;font-size:14px}
+.hero-buttons{display:flex;gap:14px;margin-top:35px;flex-wrap:wrap}
+.btn{padding:12px 20px;border:1px solid #333;border-radius:7px;font-size:14px;transition:.25s}
+.btn-primary{background:white;color:black;border-color:white}.btn-primary:hover{background:#ddd}.btn-secondary:hover{border-color:#777;background:#151515}
+.profile-wrap{display:flex;justify-content:center}
+.profile{width:260px;height:320px;object-fit:cover;border-radius:18px;border:1px solid #303030;filter:saturate(.9);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+section{padding:110px 0;border-bottom:1px solid #1d1d1d}
+.section-label{color:#666;font-family:"JetBrains Mono",monospace;font-size:13px;margin-bottom:15px}
+.section-title{font-size:clamp(32px,5vw,55px);letter-spacing:-2px;margin-bottom:45px}
+.about-text{max-width:850px;font-size:18px;color:#aaa}.about-text p{margin-bottom:22px}.about-text strong{color:white}
+.education-grid{display:grid;gap:2px}.education-card{padding:30px;background:#0e0e0e;border:1px solid #202020;transition:.25s}
+.education-card:hover{border-color:#444;transform:translateX(5px)}.education-card h3{font-size:22px;margin-bottom:8px}
+.institution{color:#aaa;margin-bottom:7px}.date{color:#666;font-family:"JetBrains Mono",monospace;font-size:13px}.gpa{margin-top:8px;color:#ddd}
+.do-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#252525}
+.do-card{background:#0b0b0b;padding:30px}.do-card h3{margin-bottom:10px;font-size:19px}.do-card p{color:#888}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.skill-box{padding:30px;border:1px solid #222;background:#0c0c0c}
+.skill-box h3{margin-bottom:15px}.tag{display:inline-block;padding:5px 10px;margin:4px 3px 4px 0;border:1px solid #292929;border-radius:5px;color:#bbb;font-size:13px;font-family:"JetBrains Mono",monospace}
+.cp-box{border:1px solid #292929;padding:45px;background:#0c0c0c;display:grid;grid-template-columns:1fr 220px;gap:50px;align-items:center}
+.cp-box p{color:#999;margin-top:15px}.rating{text-align:center;border-left:1px solid #292929;padding-left:30px}
+.rating-number{font-size:60px;font-weight:800;letter-spacing:-3px}.rating-label{color:#777;font-family:"JetBrains Mono",monospace;font-size:13px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{padding:32px;border:1px solid #242424;background:#0b0b0b;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;transition:.3s}
+.project:hover{border-color:#555;transform:translateY(-4px)}.project-number{color:#555;font-family:"JetBrains Mono",monospace;font-size:12px}
+.project h3{margin-top:18px;font-size:23px}.project p{color:#888;margin:12px 0}.tech{color:#bbb;font-family:"JetBrains Mono",monospace;font-size:12px}
+.github-link{margin-top:20px;color:#ddd;font-size:14px}.github-link:hover{text-decoration:underline}
+.activity-list{list-style:none;max-width:850px}.activity-list li{padding:18px 0;border-bottom:1px solid #222;color:#aaa}.activity-list li::before{content:"→";color:#666;margin-right:15px}
+.contact-box{max-width:800px}.contact-box h2{font-size:clamp(38px,6vw,70px);line-height:1;letter-spacing:-3px;margin-bottom:25px}.contact-box h2 em{color:#777;font-style:normal}
+.contact-box p{color:#888;margin-bottom:35px}.contact-links{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.contact-link{font-family:"JetBrains Mono",monospace;color:#bbb;border-bottom:1px solid #333;padding-bottom:3px}.contact-link:hover{color:white;border-color:white}
+footer{padding:35px 0;color:#555;font-size:13px;font-family:"JetBrains Mono",monospace}.footer-inner{display:flex;justify-content:space-between}
+@media(max-width:768px){
+.nav-links{display:none}.hero{min-height:80vh}.hero-grid{grid-template-columns:1fr;gap:35px}.profile-wrap{justify-content:flex-start}.profile{width:180px;height:220px}.hero h1{letter-spacing:-3px}
+section{padding:80px 0}.do-grid,.skills-grid,.projects{grid-template-columns:1fr}.cp-box{grid-template-columns:1fr;gap:30px}.rating{border-left:none;border-top:1px solid #292929;padding:25px 0 0}.footer-inner{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+
+<body>
+<nav>
+<div class="container nav-container">
+<a href="#home" class="logo">KB<span>.</span></a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#cp">CP</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="hero-content">
+<div class="eyebrow">HELLO, I'M</div>
+<h1>Koushik<br><span>Biswas.</span></h1>
+<p class="hero-subtitle">CSE Undergraduate @ DIU — Competitive Programmer, Aspiring Software Engineer & Problem Solver</p>
+<p class="location">Dhaka, Bangladesh</p>
+<div class="hero-buttons">
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="https://github.com/koushik894" target="_blank" class="btn btn-secondary">GitHub ↗</a>
+</div>
+</div>
+<div class="profile-wrap"><img class="profile" src="assets/profile.jpg" alt="Koushik Biswas"></div>
+</div>
+</section>
+
+<section id="about"><div class="container">
+<div class="section-label">01 — ABOUT</div><h2 class="section-title">Who's this?</h2>
+<div class="about-text">
+<p>I'm a Computer Science & Engineering undergraduate at <strong>Daffodil International University</strong>, passionate about building practical software, solving algorithmic problems, and turning ideas into working systems.</p>
+<p>I work primarily with <strong>C++ for competitive programming</strong> while exploring backend development, full-stack applications, APIs, and AI-powered solutions.</p>
+<p>I enjoy participating in hackathons, building real-world projects, and continuously improving my problem-solving skills through programming contests.</p>
+<p>Currently, I'm focused on becoming a strong <strong>Software Engineer</strong> by combining competitive programming fundamentals with real-world software development.</p>
+</div>
+</div></section>
+
+<section id="education"><div class="container">
+<div class="section-label">02 — EDUCATION</div><h2 class="section-title">Academic Journey</h2>
+<div class="education-grid">
+<div class="education-card"><h3>B.Sc. in Computer Science & Engineering</h3><p class="institution">Daffodil International University, Dhaka</p><p class="date">2024 — 2028 (Expected)</p><p class="gpa">CGPA: <strong>3.86/4.00</strong></p></div>
+<div class="education-card"><h3>Higher Secondary Certificate — Science</h3><p class="institution">Debhata College, Satkhira</p><p class="date">2021 — 2023</p><p class="gpa">GPA: <strong>4.58/5.00</strong></p></div>
+<div class="education-card"><h3>Secondary School Certificate — Science</h3><p class="institution">Fatema Rahman High School, Satkhira</p><p class="date">2016 — 2020</p><p class="gpa">GPA: <strong>5.00/5.00</strong></p></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-label">03 — CURRENTLY</div><h2 class="section-title">What I Do</h2>
+<div class="do-grid">
+<div class="do-card"><h3>Competitive Programming</h3><p>Solving algorithmic problems and continuously improving problem-solving skills.</p></div>
+<div class="do-card"><h3>Backend Development</h3><p>Building backend systems, REST APIs and practical software projects.</p></div>
+<div class="do-card"><h3>Full-Stack Development</h3><p>Exploring modern web technologies and developing complete applications.</p></div>
+<div class="do-card"><h3>Hackathons</h3><p>Turning ideas into functional prototypes under real-world time constraints.</p></div>
+<div class="do-card"><h3>Linux & Developer Tools</h3><p>Working with Linux, Git, APIs and modern development environments.</p></div>
+<div class="do-card"><h3>Software Engineering</h3><p>Combining strong programming fundamentals with practical project development.</p></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="container">
+<div class="section-label">04 — TOOLBOX</div><h2 class="section-title">Technical Skills</h2>
+<div class="skills-grid">
+<div class="skill-box"><h3>Programming Languages</h3><span class="tag">C++</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">Python</span><span class="tag">SQL</span></div>
+<div class="skill-box"><h3>Frameworks & Technologies</h3><span class="tag">FastAPI</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">REST API</span></div>
+<div class="skill-box"><h3>Databases</h3><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">MongoDB</span></div>
+<div class="skill-box"><h3>Tools & Platforms</h3><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Linux</span><span class="tag">VS Code</span><span class="tag">MATLAB</span><span class="tag">Arduino</span></div>
+</div>
+</div></section>
+
+<section id="cp"><div class="container">
+<div class="section-label">05 — TRACK RECORD</div><h2 class="section-title">Competitive Programming</h2>
+<div class="cp-box">
+<div><h3>Problem solving is my training ground.</h3>
+<p>Competitive programming is one of the ways I sharpen my algorithmic thinking and problem-solving skills.</p>
+<p>I regularly practice Data Structures, Algorithms, Greedy, Dynamic Programming, Graph Algorithms, Sorting, Trees and other problem-solving techniques.</p>
+<p>My focus is on understanding unfamiliar problems, designing efficient solutions and writing clean, optimized code.</p></div>
+<div class="rating"><div class="rating-number">659</div><div class="rating-label">CODEFORCES RATING</div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="container">
+<div class="section-label">06 — SELECTED WORK</div><h2 class="section-title">Projects</h2>
+<div class="projects">
+<article class="project"><div><span class="project-number">PROJECT 01</span><h3>Energy Optimizer</h3><p>A backend system designed to process energy-related data and generate optimized decisions through a structured API architecture.</p><div class="tech">Python · FastAPI · Pydantic · REST API</div></div><a href="#" class="github-link">GitHub ↗</a></article>
+<article class="project"><div><span class="project-number">PROJECT 02</span><h3>AI Health Assistant</h3><p>An AI-powered project focused on providing an interactive health-assistance experience through a backend API.</p><div class="tech">Python · FastAPI · AI</div></div><a href="#" class="github-link">GitHub ↗</a></article>
+<article class="project"><div><span class="project-number">PROJECT 03</span><h3>Movie Theater Management System</h3><p>A console-based management system demonstrating practical applications of Linked List, Stack and Queue.</p><div class="tech">C · Linked List · Stack · Queue</div></div><a href="#" class="github-link">GitHub ↗</a></article>
+<article class="project"><div><span class="project-number">PROJECT 04</span><h3>Water Level Indicator</h3><p>A sensor-based electronics project designed to detect and indicate different water levels.</p><div class="tech">Electronics · Sensors · Circuit Design</div></div></article>
+<article class="project"><div><span class="project-number">PROJECT 05</span><h3>LED Dimmer</h3><p>A hardware project demonstrating LED brightness control using PWM generated through an NE555 timer-based circuit.</p><div class="tech">NE555 · PWM · Electronics</div></div></article>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-label">07 — BEYOND CODE</div><h2 class="section-title">Activities & Interests</h2>
+<ul class="activity-list">
+<li>Participating in hackathons and rapid software development challenges.</li>
+<li>Building practical projects around APIs, backend systems and AI.</li>
+<li>Competitive programming and algorithmic problem solving.</li>
+<li>Exploring Linux and developer tooling.</li>
+<li>Learning Data Structures & Algorithms through regular practice.</li>
+<li>Experimenting with new technologies and turning ideas into working prototypes.</li>
+</ul>
+</div></section>
+
+<section id="contact"><div class="container"><div class="section-label">08 — CONTACT</div>
+<div class="contact-box">
+<h2>Let's build something <em>worth solving.</em></h2>
+<p>Open to internships, collaborative projects, hackathons and interesting software engineering opportunities.</p>
+<div class="contact-links">
+<a class="contact-link" href="mailto:koushikbiswas160@gmail.com">koushikbiswas160@gmail.com</a>
+<a class="contact-link" href="tel:+8801602393520">+8801602393520</a>
+<a class="contact-link" href="https://github.com/koushik894" target="_blank">github.com/koushik894 ↗</a>
+</div>
+</div></div></section>
+</main>
+
+<footer><div class="container footer-inner"><span>© 2026 Koushik Biswas</span><span>CSE · DIU · Bangladesh</span></div></footer>
+</body>
+</html>
